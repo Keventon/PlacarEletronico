@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.PlacarActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:baselineAligned="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/cor_time_1">
+
+            <TextView
+                android:id="@+id/textReduzirTres"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:background="@drawable/border_text"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="@drawable/ripple_effect"
+                android:padding="10dp"
+                android:text="@string/text_reduzir_3"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/textAddUmPonto"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <TextView
+                android:id="@+id/textReduzirDois"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:background="@drawable/border_text"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="@drawable/ripple_effect"
+                android:padding="10dp"
+                android:text="@string/text_reduzir_2"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/textAddUmPonto"
+                app:layout_constraintStart_toEndOf="@+id/textReduzirTres"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <TextView
+                android:id="@+id/textReduzirUm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="60dp"
+                android:background="@drawable/border_text"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="@drawable/ripple_effect"
+                android:padding="10dp"
+                android:text="@string/text_reduzir_1"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/textAddUmPonto"
+                app:layout_constraintStart_toEndOf="@+id/textReduzirTres"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <TextView
+                android:id="@+id/textAddUmPonto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/border_text"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="@drawable/ripple_effect"
+                android:padding="10dp"
+                android:text="@string/add_um_ponto"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/textAddDoisPontos"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textAddDoisPontos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/border_text"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="@drawable/ripple_effect"
+                android:padding="10dp"
+                android:text="@string/add_dois_pontos"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/textAddUmPonto"
+                app:layout_constraintEnd_toStartOf="@+id/textAddTresPontos"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textAddTresPontos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="12dp"
+                android:background="@drawable/border_text"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="@drawable/ripple_effect"
+                android:padding="10dp"
+                android:text="@string/add_tres_pontos"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textTime1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="44dp"
+                android:gravity="center"
+                android:text="@string/time_1"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textAddUmPonto" />
+
+            <TextView
+                android:id="@+id/textPlacarTimeA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/palcar_time_1"
+                android:textColor="@color/white"
+                android:textSize="100sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textTime1" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/cor_time_2">
+
+            <TextView
+                android:id="@+id/textReduzirTresTime2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:background="@drawable/border_text"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="@drawable/ripple_effect"
+                android:padding="10dp"
+                android:text="@string/text_reduzir_3"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/textAddUmPontoTime2"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <TextView
+                android:id="@+id/textReduzirDoisTime2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:background="@drawable/border_text"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="@drawable/ripple_effect"
+                android:padding="10dp"
+                android:text="@string/text_reduzir_2"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/textAddUmPontoTime2"
+                app:layout_constraintStart_toEndOf="@+id/textReduzirTresTime2"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <TextView
+                android:id="@+id/textReduzirUmTime2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="60dp"
+                android:background="@drawable/border_text"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="@drawable/ripple_effect"
+                android:padding="10dp"
+                android:text="@string/text_reduzir_1"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/textAddUmPontoTime2"
+                app:layout_constraintStart_toEndOf="@+id/textReduzirTresTime2"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <TextView
+                android:id="@+id/textAddUmPontoTime2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/border_text"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="@drawable/ripple_effect"
+                android:padding="10dp"
+                android:text="@string/add_um_ponto"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/textAddDoisPontosTime2"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textAddDoisPontosTime2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/border_text"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="@drawable/ripple_effect"
+                android:padding="10dp"
+                android:text="@string/add_dois_pontos"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/textAddUmPontoTime2"
+                app:layout_constraintEnd_toStartOf="@+id/textAddTresPontosTime2"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textAddTresPontosTime2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="12dp"
+                android:background="@drawable/border_text"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="@drawable/ripple_effect"
+                android:padding="10dp"
+                android:text="@string/add_tres_pontos"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textTime2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="124dp"
+                android:gravity="center"
+                android:text="@string/time_2"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textPlacarTimeB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/palcar_time_1"
+                android:textColor="@color/white"
+                android:textSize="100sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textTime2" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textResetarPlacar"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="@string/zerar_placares"
+        android:textSize="24sp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:background="@drawable/border_text"
+        android:foreground="@drawable/ripple_effect"
+        android:focusable="true"
+        android:clickable="true"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
